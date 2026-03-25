@@ -134,7 +134,7 @@
     </text>
 
     <text x="208" y="148" class="title" filter="url(#glow)">
-      <tspan>Baohao Liao / 廖保浩</tspan>
+      <tspan>Baohao Liao</tspan>
       <animate attributeName="opacity" values="0.88;1;0.88" dur="2.8s" repeatCount="indefinite"/>
     </text>
 
