@@ -1,0 +1,153 @@
+<svg width="900" height="260" viewBox="0 0 900 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated terminal rain banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="round">
+      <rect width="900" height="260" rx="22"/>
+    </clipPath>
+
+    <style>
+      .bg { fill: url(#bg); }
+      .rain { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: 15px; }
+      .dim { fill: #0f5132; opacity: 0.35; }
+      .mid { fill: #22c55e; opacity: 0.7; }
+      .hot { fill: #dcfce7; opacity: 0.95; }
+      .title { fill: #d1fae5; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 28px; letter-spacing: 2px; }
+      .sub { fill: #86efac; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 14px; letter-spacing: 1px; opacity: 0.9; }
+      .panel { fill: rgba(0,0,0,0.35); stroke: rgba(134,239,172,0.18); stroke-width: 1; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <rect width="900" height="260" class="bg"/>
+
+    <!-- faint scanlines -->
+    <g opacity="0.08">
+      <path d="M0 20H900M0 40H900M0 60H900M0 80H900M0 100H900M0 120H900M0 140H900M0 160H900M0 180H900M0 200H900M0 220H900M0 240H900" stroke="#86efac"/>
+    </g>
+
+    <!-- falling columns -->
+    <g class="rain" filter="url(#glow)">
+      <text x="40" y="-120">
+        <tspan class="hot">1</tspan><tspan x="40" dy="18" class="mid">0</tspan><tspan x="40" dy="18" class="mid">1</tspan><tspan x="40" dy="18" class="dim">0</tspan><tspan x="40" dy="18" class="dim">1</tspan><tspan x="40" dy="18" class="dim">1</tspan><tspan x="40" dy="18" class="dim">0</tspan><tspan x="40" dy="18" class="dim">1</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 420" dur="4.4s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="85" y="-40">
+        <tspan class="hot">#</tspan><tspan x="85" dy="18" class="mid">{</tspan><tspan x="85" dy="18" class="mid">/</tspan><tspan x="85" dy="18" class="dim">&gt;</tspan><tspan x="85" dy="18" class="dim">_</tspan><tspan x="85" dy="18" class="dim">;</tspan><tspan x="85" dy="18" class="dim">=</tspan><tspan x="85" dy="18" class="dim">1</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 380" dur="5.7s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="130" y="-160">
+        <tspan class="hot">0</tspan><tspan x="130" dy="18" class="mid">1</tspan><tspan x="130" dy="18" class="mid">0</tspan><tspan x="130" dy="18" class="dim">0</tspan><tspan x="130" dy="18" class="dim">1</tspan><tspan x="130" dy="18" class="dim">1</tspan><tspan x="130" dy="18" class="dim">0</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 430" dur="4.9s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="180" y="-90">
+        <tspan class="hot">$</tspan><tspan x="180" dy="18" class="mid">c</tspan><tspan x="180" dy="18" class="mid">d</tspan><tspan x="180" dy="18" class="dim">~</tspan><tspan x="180" dy="18" class="dim">/</tspan><tspan x="180" dy="18" class="dim">&gt;</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 395" dur="6.1s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="235" y="-130">
+        <tspan class="hot">1</tspan><tspan x="235" dy="18" class="mid">1</tspan><tspan x="235" dy="18" class="mid">0</tspan><tspan x="235" dy="18" class="dim">1</tspan><tspan x="235" dy="18" class="dim">0</tspan><tspan x="235" dy="18" class="dim">1</tspan><tspan x="235" dy="18" class="dim">0</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 410" dur="5.1s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="290" y="-70">
+        <tspan class="hot">&lt;</tspan><tspan x="290" dy="18" class="mid">/</tspan><tspan x="290" dy="18" class="mid">&gt;</tspan><tspan x="290" dy="18" class="dim">_</tspan><tspan x="290" dy="18" class="dim">0</tspan><tspan x="290" dy="18" class="dim">1</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 360" dur="5.8s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="345" y="-150">
+        <tspan class="hot">r</tspan><tspan x="345" dy="18" class="mid">m</tspan><tspan x="345" dy="18" class="mid">-</tspan><tspan x="345" dy="18" class="dim">r</tspan><tspan x="345" dy="18" class="dim">f</tspan><tspan x="345" dy="18" class="dim">*</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 430" dur="6.6s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="400" y="-60">
+        <tspan class="hot">1</tspan><tspan x="400" dy="18" class="mid">0</tspan><tspan x="400" dy="18" class="mid">1</tspan><tspan x="400" dy="18" class="dim">1</tspan><tspan x="400" dy="18" class="dim">0</tspan><tspan x="400" dy="18" class="dim">0</tspan><tspan x="400" dy="18" class="dim">1</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 355" dur="4.2s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="455" y="-180">
+        <tspan class="hot">g</tspan><tspan x="455" dy="18" class="mid">i</tspan><tspan x="455" dy="18" class="mid">t</tspan><tspan x="455" dy="18" class="dim">p</tspan><tspan x="455" dy="18" class="dim">u</tspan><tspan x="455" dy="18" class="dim">s</tspan><tspan x="455" dy="18" class="dim">h</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 450" dur="6.9s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="510" y="-100">
+        <tspan class="hot">0</tspan><tspan x="510" dy="18" class="mid">1</tspan><tspan x="510" dy="18" class="mid">1</tspan><tspan x="510" dy="18" class="dim">0</tspan><tspan x="510" dy="18" class="dim">1</tspan><tspan x="510" dy="18" class="dim">0</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 390" dur="4.8s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="565" y="-140">
+        <tspan class="hot">$</tspan><tspan x="565" dy="18" class="mid">n</tspan><tspan x="565" dy="18" class="mid">p</tspan><tspan x="565" dy="18" class="dim">m</tspan><tspan x="565" dy="18" class="dim">i</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 420" dur="5.4s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="620" y="-80">
+        <tspan class="hot">{</tspan><tspan x="620" dy="18" class="mid">}</tspan><tspan x="620" dy="18" class="mid">[</tspan><tspan x="620" dy="18" class="dim">]</tspan><tspan x="620" dy="18" class="dim">&lt;</tspan><tspan x="620" dy="18" class="dim">&gt;</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 365" dur="5.9s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="675" y="-170">
+        <tspan class="hot">1</tspan><tspan x="675" dy="18" class="mid">0</tspan><tspan x="675" dy="18" class="mid">0</tspan><tspan x="675" dy="18" class="dim">1</tspan><tspan x="675" dy="18" class="dim">1</tspan><tspan x="675" dy="18" class="dim">0</tspan><tspan x="675" dy="18" class="dim">1</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 445" dur="4.6s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="730" y="-95">
+        <tspan class="hot">&gt;</tspan><tspan x="730" dy="18" class="mid">_</tspan><tspan x="730" dy="18" class="mid">_</tspan><tspan x="730" dy="18" class="dim">|</tspan><tspan x="730" dy="18" class="dim">|</tspan><tspan x="730" dy="18" class="dim">1</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 380" dur="5.2s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="785" y="-150">
+        <tspan class="hot">c</tspan><tspan x="785" dy="18" class="mid">u</tspan><tspan x="785" dy="18" class="mid">r</tspan><tspan x="785" dy="18" class="dim">l</tspan><tspan x="785" dy="18" class="dim">-</tspan><tspan x="785" dy="18" class="dim">s</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 430" dur="6.3s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="840" y="-50">
+        <tspan class="hot">1</tspan><tspan x="840" dy="18" class="mid">0</tspan><tspan x="840" dy="18" class="mid">1</tspan><tspan x="840" dy="18" class="dim">0</tspan><tspan x="840" dy="18" class="dim">1</tspan><tspan x="840" dy="18" class="dim">1</tspan>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 340" dur="4.5s" repeatCount="indefinite"/>
+      </text>
+    </g>
+
+    <!-- terminal panel -->
+    <rect x="180" y="58" width="540" height="144" rx="16" class="panel"/>
+
+    <!-- terminal dots -->
+    <circle cx="206" cy="80" r="5" fill="#86efac" opacity="0.9"/>
+    <circle cx="224" cy="80" r="5" fill="#bbf7d0" opacity="0.7"/>
+    <circle cx="242" cy="80" r="5" fill="#dcfce7" opacity="0.55"/>
+
+    <!-- prompt content -->
+    <text x="208" y="118" class="sub">
+      <tspan>$ whoami</tspan>
+    </text>
+
+    <text x="208" y="148" class="title" filter="url(#glow)">
+      <tspan>YOUR NAME / HANDLE</tspan>
+      <animate attributeName="opacity" values="0.88;1;0.88" dur="2.8s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="208" y="176" class="sub">
+      <tspan>building cool things_</tspan>
+      <tspan opacity="1">█
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </tspan>
+    </text>
+
+    <!-- subtle sweep -->
+    <rect x="-220" y="0" width="220" height="260" fill="white" opacity="0.045" transform="skewX(-18)">
+      <animate attributeName="x" values="-260;980" dur="4.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
